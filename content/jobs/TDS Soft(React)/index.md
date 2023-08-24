@@ -1,5 +1,5 @@
 ---
-date: '2022-11-01'
+date: '2022-11-02'
 title: 'React Developer'
 company: 'TDS Soft'
 location: 'Remote'

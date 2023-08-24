@@ -1,6 +1,6 @@
 ---
-date: '2'
-title: 'Spotify Profile'
+date: '3'
+title: 'Portfolio v1'
 cover: './portfolio.png'
 github: 'https://github.com/KlaudiuszB5528/Portfolio'
 external: 'https://www.klaudiuszb.live/'
