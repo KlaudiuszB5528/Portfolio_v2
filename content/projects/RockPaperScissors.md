@@ -4,7 +4,7 @@ title: 'Rock Paper Scissors'
 github: 'https://github.com/KlaudiuszB5528/rock-paper-scissors'
 external: 'https://klaudiuszb5528.github.io/rock-paper-scissors/'
 tech:
-  - Vanilla Js
+  - Js
   - HTML
   - CSS
 showInProjects: true

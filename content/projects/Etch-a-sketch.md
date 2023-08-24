@@ -4,7 +4,7 @@ title: 'Etch-a-Sketch'
 github: 'https://github.com/KlaudiuszB5528/Etch-a-Sketch'
 external: 'https://klaudiuszb5528.github.io/Etch-a-Sketch/'
 tech:
-  - Vanilla Js
+  - Js
   - CSS
   - HTML
 showInProjects: true
