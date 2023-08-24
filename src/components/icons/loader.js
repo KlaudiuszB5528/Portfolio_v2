@@ -5,7 +5,7 @@ const IconLoader = () => (
     <title>Loader Logo</title>
     <g>
       <g id="B" transform="translate(11.000000, 5.000000)">
-        <text x="25" y="62.5" fill="currentColor" fontSize="55px">
+        <text x="23" y="62.5" fill="currentColor" fontSize="55px">
           K
         </text>
       </g>
