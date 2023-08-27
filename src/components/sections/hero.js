@@ -1,9 +1,9 @@
-import { loaderDelay, navDelay } from '@utils';
-import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { useEffect, useState } from 'react';
+import { loaderDelay, navDelay } from '@utils';
 
-import { usePrefersReducedMotion } from '@hooks';
 import styled from 'styled-components';
+import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -70,9 +70,9 @@ const Hero = () => {
         <a href="https://www.linkedin.com/in/alan-urban-269b23bb/" target="_blank" rel="noreferrer">
           TDS Soft
         </a>{' '}
-        since November 2022, also pursuing a CS degree at Kielce University of Technology. I'm
-        enthusiastic about crafting dynamic, user-centric web apps using the latest tech. Eager to
-        take on fresh challenges and create innovative solutions for modern businesses.
+        and a CS student at Kielce University of Technology. Passionate about creating dynamic,
+        user-centric web apps with the latest tech. Committed to innovative solutions for modern
+        businesses.
       </p>
     </>
   );
