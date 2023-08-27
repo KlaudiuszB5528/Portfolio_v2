@@ -29,7 +29,7 @@ To give it a try, run the following script:
 
 ## Util function
 
-Overwritting Tailwind classess doesn't always end as expected therefore you can use two libraries to help you with that:
+Sometimes, achieving the desired results when overwriting Tailwind classes can be tricky. That's where the tailwind-merge and clsx libraries come in handy:
 
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge)
 - [clsx](https://www.npmjs.com/package/clsx)
