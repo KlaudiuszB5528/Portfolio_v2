@@ -1,10 +1,10 @@
 import { Link, graphql } from 'gatsby';
 
+import { Helmet } from 'react-helmet';
 import { Layout } from '@components';
-import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import kebabCase from 'lodash/kebabCase';
 import styled from 'styled-components';
 
 const StyledPostContainer = styled.main`
@@ -62,7 +62,7 @@ const PostTemplate = ({ data, location }) => {
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
-          <Link to="/blog">All memories</Link>
+          <Link to="/blog">All insights</Link>
         </span>
 
         <StyledPostHeader>
