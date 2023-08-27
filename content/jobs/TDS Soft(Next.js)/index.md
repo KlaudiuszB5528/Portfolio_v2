@@ -7,8 +7,8 @@ range: 'November 2022 - Present'
 url: 'https://www.linkedin.com/in/alan-urban-269b23bb/'
 ---
 
-- Developed the authentication system using NextAuth and integrated it with Firebase.
-- Storybook configuration and components development.
-- Testing with Jest and React Testing Library.
-- Leveraged the capabilities of Next.js version 13 to buildand structure the application's directory efficiently.
-- Designed and developed various views for ticket management and ticket listing in the resell tickets platform project.
+- Developed an authentication system using NextAuth and seamlessly integrated it with Firebase.
+- Created and configured components within Storybook, enhancing modularity and reusability.
+- Employed Jest and React Testing Library for comprehensive unit and integration testing.
+- Utilized the capabilities of Next.js version 13 to efficiently structure the application's directory.
+- Designed and implemented various views for ticket management and listing within the resell tickets platform project.

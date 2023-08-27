@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Klaudiusz Biegacz',
     description: 'React/Next.js developer and CS Student.',
-    siteUrl: 'https://portfolio-v2-hazel-gamma.vercel.app/', // No trailing slash allowed!
+    siteUrl: 'https://klaudiuszb.me', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [
