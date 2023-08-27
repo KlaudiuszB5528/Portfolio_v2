@@ -7,9 +7,9 @@ range: 'November 2022 - Present'
 url: 'https://www.linkedin.com/in/alan-urban-269b23bb/'
 ---
 
-- Developed a service worker to add W3C headers to API calls
-- Implemented a custom hook to handle user login and authentication.
-- Leveraged D3 for data visualization,
-- Created and optimized GraphQL queries and mutations to efficiently communicate with the backend and fetch/update data.
-- Implemented table with pagination and search functionality
-- Wrote unit tests to validate and verify the functionality of key features, ensuring robustness and reliability.
+- Developed a service worker to incorporate W3C headers into API calls.
+- Designed a custom hook for seamless user login and authentication.
+- Employed D3.js for effective data visualization.
+- Crafted and optimized GraphQL queries and mutations, streamlining backend data communication and updates.
+- Implemented a dynamic table with pagination and search capabilities.
+- Conducted unit tests to validate key features, ensuring reliability and robustness.
