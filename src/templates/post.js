@@ -1,10 +1,11 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+
+import { Layout } from '@components';
 import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { Layout } from '@components';
 
 const StyledPostContainer = styled.main`
   max-width: 1000px;
@@ -61,7 +62,7 @@ const PostTemplate = ({ data, location }) => {
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
-          <Link to="/pensieve">All memories</Link>
+          <Link to="/blog">All memories</Link>
         </span>
 
         <StyledPostHeader>
@@ -78,7 +79,7 @@ const PostTemplate = ({ data, location }) => {
             {tags &&
               tags.length > 0 &&
               tags.map((tag, i) => (
-                <Link key={i} to={`/pensieve/tags/${kebabCase(tag)}/`} className="tag">
+                <Link key={i} to={`/blog/tags/${kebabCase(tag)}/`} className="tag">
                   #{tag}
                 </Link>
               ))}
@@ -99,7 +100,7 @@ PostTemplate.propTypes = {
 };
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { slug: { eq: $path } }) {
       html
       frontmatter {

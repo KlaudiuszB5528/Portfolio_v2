@@ -1,9 +1,9 @@
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import React, { useEffect, useState } from 'react';
 import { loaderDelay, navDelay } from '@utils';
+import React, { useEffect, useState } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import styled from 'styled-components';
 import { usePrefersReducedMotion } from '@hooks';
+import styled from 'styled-components';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -77,8 +77,8 @@ const Hero = () => {
     </>
   );
   const five = (
-    <a className="email-link" href="/#projects">
-      Check out my projects!
+    <a className="email-link" href="/blog">
+      Check out my blog!
     </a>
   );
 
