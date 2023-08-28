@@ -36,7 +36,7 @@ Sometimes, achieving the desired results when overwriting Tailwind classes can b
 
 Then you can create a util function to use both libraries:
 
-```javascript:title=src/utils/cn.ts
+```ts:title=src/utils/cn.ts
 import { clsx, ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -48,7 +48,7 @@ export function cn(...inputs: ClassValue[]) {
 Tailwind-merge will ensure that classess are merge correctly and clsx will help you to use conditional classess.<br>
 With clsx you can use an object to define the classess you want to use:
 
-```javascript:title=src/stories/Button.tsx
+```tsx:title=src/stories/Button.tsx
 <button
   type={type}
   disabled={isLoading}
