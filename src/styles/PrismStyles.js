@@ -109,6 +109,12 @@ const PrismStyles = css`
   .gatsby-highlight pre[class='language-javascript']::before {
     content: 'js';
   }
+  .gatsby-highlight pre[class='language-ts']::before {
+    content: 'ts';
+  }
+  .gatsby-highlight pre[class='language-tsx']::before {
+    content: 'tsx';
+  }
   .gatsby-highlight pre[class='language-js']::before {
     content: 'js';
   }
