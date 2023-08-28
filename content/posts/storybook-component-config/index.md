@@ -11,7 +11,7 @@ tags:
 
 # Introduction
 
-To create customizable components using [Storybook](https://storybook.js.org/) with [Tailwind](https://tailwindcss.com/) you can prepare predefined variants and and apply appropriate classes based on the passed props.<br> While the Storybook documentation suggests using a function with a switch statement to return the necessary classes, there's a more elegant approach.<br>
+To create customizable components using [Storybook](https://storybook.js.org/) with [Tailwind](https://tailwindcss.com/) you can prepare predefined variants and apply appropriate classes based on the passed props.<br> While the Storybook documentation suggests using a function with a switch statement to return the necessary classes, there's a more elegant approach.<br>
 I prefer utilizing Maps to store classes and subsequently applying them within a function to ensure the correct classes are returned.<br> Here's a simple example illustrating this approach with a Button component::
 
 ```javascript:title=src/stories/Button.tsx
@@ -78,6 +78,28 @@ const sizes = new Map(sizesConfig);
 ```
 
 but I prefer to use the one with the object because it's more readable.
+
+# Usage
+
+Now that you've created the Map, you can use it in your component:
+
+```javascript:title=src/stories/Button.tsx
+export const Button = ({
+  size = 'medium',
+  label,
+  ...props
+}: ButtonProps) => {
+  return (
+    <button
+      className="flex text-white bg-dark-gray"
+      size={sizes.get(size)}
+      {...props}
+    >
+      {label}
+    </button>
+  );
+};
+```
 
 # Conclusion
 
