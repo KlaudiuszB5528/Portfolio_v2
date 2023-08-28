@@ -57,20 +57,21 @@ export default function SwiperComponent({
 const swiperRef = useRef(null);
 
 useEffect(() => {
-  // we need to initialize swiper after the component is mounted
+  /* since support for web components is not fully implemented in React
+  we need to initialize swiper manually and update it's params*/
 const swiperContainer = swiperRef.current;
-    // since support for web components is not fully implemented in React we need to initialize swiper manually and update it's params
     if (swiperContainer) {
       const params = updateParams(breakpoint);
       Object.assign(swiperContainer, params);
     }
-    // swiper is still missing proper typing so we need to use @ts-expect-error (or @ts-ignore)
-    // @ts-expect-error - swiperContainer is not null
+    /*swiper is still missing proper typing so we need to use @ts-expect-error (or @ts-ignore)
+    @ts-expect-error - swiperContainer is not null*/
     swiperContainer?.initialize();
 }, []);
 
 return (
-  //we need to use ref to access the swiper container and set init to false for our custom params to work
+  /*we need to use ref to access the swiper container
+   and set init to false for our custom params to work*/
 <swiper-container ref={swiperRef} init={false}>
   {slidesData.map((slide) =>
     renderSwiperSlide(slide, handleClick),
@@ -89,7 +90,7 @@ import Card from './Card';
 import CardDetails from './CardDetails';
 
 export const updateParams = (windowWidth?: number) => {
-  //creating params is similiar like in Swiper React component
+//creating params is similiar like in Swiper React component
 const params = {
   breakpoints: {
     320: {
@@ -108,8 +109,13 @@ const params = {
     },
   spaceBetween: 20,
   initialSlide: 1,
-  //we can also inject styles, I've used it to push pagination below the slides, also noteworthy is that we need to use !important to override some default styles
-  //for what classess are available check the documentation https://swiperjs.com/element#parts
+  /*we can also inject styles,I've used it to push pagination
+  below the slides,
+  also noteworthy is that we need to use !important
+  to override some default styles.
+  For what classess are available check the documentation:
+  https://swiperjs.com/element#parts
+  */
   injectStyles: [
     `
     .swiper-wrapper{
@@ -148,7 +154,8 @@ onClickFunction(slide.objectID);
 };
 return (
   <swiper-slide
-      //I also need to pass different key if the slide is detailed because I'm using the same slide for both views and have them on the same page
+      /*I also need to pass different key if the slide is detailed
+      because I'm using the same slide for both views and have them on the same page*/
       key={isDetailed ? `${slide.objectID}-detailed` : slide.objectID}
       onClick={handleClick} >
     <Card url={slide.img}>
