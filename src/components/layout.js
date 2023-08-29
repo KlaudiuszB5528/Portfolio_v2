@@ -13,10 +13,12 @@ const StyledContent = styled.div`
 
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
+  const [isLoading, setIsLoading] = useState(isHome);
+  const isNoHash = location.hash === '';
   const isBlog = location.pathname === '/blog/';
   const isSessionStorage = typeof sessionStorage === 'object';
   const getIsBlog = isSessionStorage && sessionStorage.getItem('isBlog');
-  const [isLoading, setIsLoading] = useState(isHome);
+  const isLoader = isLoading && isHome && isNoHash && getIsBlog === 'false';
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
     const allLinks = Array.from(document.querySelectorAll('a'));
@@ -74,7 +76,7 @@ const Layout = ({ children, location }) => {
             Skip to Content
           </a>
 
-          {isLoading && isHome && getIsBlog === 'false' ? (
+          {isLoader ? (
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
