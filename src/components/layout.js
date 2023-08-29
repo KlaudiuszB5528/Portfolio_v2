@@ -1,9 +1,8 @@
-import { Email, Footer, Head, Loader, Nav, Social } from '@components';
-import { GlobalStyle, theme } from '@styles';
-import React, { useEffect, useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import styled, { ThemeProvider } from 'styled-components';
+import { Head, Loader, Nav, Social, Email, Footer } from '@components';
+import { GlobalStyle, theme } from '@styles';
 
 const StyledContent = styled.div`
   display: flex;
@@ -14,11 +13,7 @@ const StyledContent = styled.div`
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(isHome);
-  const isNoHash = location.hash === '';
-  const isBlog = location.pathname === '/blog/';
-  const isSessionStorage = typeof sessionStorage === 'object';
-  const getIsBlog = isSessionStorage && sessionStorage.getItem('isBlog');
-  const isLoader = isLoading && isHome && isNoHash && getIsBlog === 'false';
+
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
     const allLinks = Array.from(document.querySelectorAll('a'));
@@ -31,19 +26,6 @@ const Layout = ({ children, location }) => {
       });
     }
   };
-
-  useEffect(() => {
-    if (isBlog && isSessionStorage) {
-      sessionStorage.setItem('isBlog', true);
-    } else {
-      sessionStorage.setItem('isBlog', false);
-    }
-    return () => {
-      if (isSessionStorage) {
-        sessionStorage.setItem('isBlog', false);
-      }
-    };
-  }, [isBlog]);
 
   useEffect(() => {
     if (isLoading) {
@@ -76,11 +58,11 @@ const Layout = ({ children, location }) => {
             Skip to Content
           </a>
 
-          {isLoader ? (
+          {isLoading && isHome ? (
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
-              <Nav isHome={isHome} isBlog={isBlog} />
+              <Nav isHome={isHome} />
               <Social isHome={isHome} />
               <Email isHome={isHome} />
 
