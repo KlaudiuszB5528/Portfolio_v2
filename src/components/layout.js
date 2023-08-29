@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import styled, { ThemeProvider } from 'styled-components';
-import { Head, Loader, Nav, Social, Email, Footer } from '@components';
+import { Email, Footer, Head, Loader, Nav, Social } from '@components';
 import { GlobalStyle, theme } from '@styles';
+import React, { useEffect, useState } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+
+import PropTypes from 'prop-types';
 
 const StyledContent = styled.div`
   display: flex;
@@ -12,8 +13,10 @@ const StyledContent = styled.div`
 
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
+  const isBlog = location.pathname === '/blog/';
+  const isSessionStorage = typeof sessionStorage === 'object';
+  const getIsBlog = isSessionStorage && sessionStorage.getItem('isBlog');
   const [isLoading, setIsLoading] = useState(isHome);
-
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
     const allLinks = Array.from(document.querySelectorAll('a'));
@@ -26,6 +29,19 @@ const Layout = ({ children, location }) => {
       });
     }
   };
+
+  useEffect(() => {
+    if (isBlog && isSessionStorage) {
+      sessionStorage.setItem('isBlog', true);
+    } else {
+      sessionStorage.setItem('isBlog', false);
+    }
+    return () => {
+      if (isSessionStorage) {
+        sessionStorage.setItem('isBlog', false);
+      }
+    };
+  }, [isBlog]);
 
   useEffect(() => {
     if (isLoading) {
@@ -58,11 +74,11 @@ const Layout = ({ children, location }) => {
             Skip to Content
           </a>
 
-          {isLoading && isHome ? (
+          {isLoading && isHome && getIsBlog === 'false' ? (
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
-              <Nav isHome={isHome} />
+              <Nav isHome={isHome} isBlog={isBlog} />
               <Social isHome={isHome} />
               <Email isHome={isHome} />
 
