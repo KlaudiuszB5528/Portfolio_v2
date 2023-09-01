@@ -133,6 +133,7 @@ const About = () => {
     'GraphQL',
     'D3.js',
     'MongoDB',
+    'Storybook',
     'React-testing-library',
   ];
 
