@@ -6,7 +6,7 @@ draft: false
 slug: /blog/storybook-component-config
 tags:
   - Storybook
-  - JS
+  - Tailwind
 ---
 
 # Introduction
