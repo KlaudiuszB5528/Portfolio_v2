@@ -147,10 +147,8 @@ const errors = new Map(Object.entries(errorsConfig));
 export default function Label({ fieldError, name, error }: ILabelProps) {
   return (
     <label htmlFor={name} className="text-[#A33B36] text-xs">
-      <>
         {fieldError && fieldError?.message}
         {error !== undefined && errors.get(error)}
-      </>
     </label>
   );
 }
