@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 
-import { StaticImage } from 'gatsby-plugin-image';
-import sr from '@utils/sr';
 import { srConfig } from '@config';
-import styled from 'styled-components';
 import { usePrefersReducedMotion } from '@hooks';
+import sr from '@utils/sr';
+import { StaticImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -131,9 +131,9 @@ const About = () => {
     'TypeScript',
     'React',
     'GraphQL',
-    'D3.js',
-    'MongoDB',
-    'Storybook',
+    'PostgreSQL',
+    'Prisma',
+    'SCSS/TailwindCSS',
     'React-testing-library',
   ];
 

@@ -1,9 +1,9 @@
 ---
-date: '2022-11-02'
+date: '2022-09-02'
 title: 'React Developer'
 company: 'TDS Soft'
 location: 'Remote'
-range: 'November 2022 - Present'
+range: 'September 2022 - Present'
 url: 'https://www.linkedin.com/in/alan-urban-269b23bb/'
 ---
 
