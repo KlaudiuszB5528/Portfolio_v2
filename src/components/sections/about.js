@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 
-import { StaticImage } from 'gatsby-plugin-image';
-import sr from '@utils/sr';
 import { srConfig } from '@config';
-import styled from 'styled-components';
 import { usePrefersReducedMotion } from '@hooks';
+import sr from '@utils/sr';
+import { StaticImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -165,7 +165,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/klaudiusz_1.jpg"
+              src="../../images/klaudiusz_2.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
