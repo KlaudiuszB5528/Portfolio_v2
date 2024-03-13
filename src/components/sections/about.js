@@ -147,13 +147,15 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Klaudiusz, a dedicated web developer with a year of hands-on commercial
-              experience, backed by two years of focused learning. Previously, I served as a Web
-              Publisher at <a href="https://cheil.de/">Cheil Germany GmbH</a>, where I managed the{' '}
-              <a href="https://iqos.com">iqos</a> page for the UK market. Presently, I'm deeply
-              engaged as a React/Next.js developer, juggling two exciting projects - one in React
-              and another in Next.js. My passion for creating seamless web experiences drives me to
-              continually learn and innovate in the ever-evolving realm of web development.
+              Hello! I'm Klaudiusz, a frontend developer with over two years of commercial
+              experience. I currently work independently on two exciting projects – one in React and
+              the other in Next.js. My responsibilities include building new features, writing
+              tests, refactoring, and conducting code reviews. I thrive on crafting clean logic,
+              implementing new functionalities, and solving development challenges. In my free time,
+              I enjoy building full-stack applications. My preferred stack for these personal
+              projects is Next.js with Go, using Docker and PostgreSQL. Previously, I served as a
+              Web Publisher at <a href="https://cheil.de/">Cheil Germany GmbH</a>, managing the{' '}
+              <a href="https://iqos.com">iqos</a> page for the UK market.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
