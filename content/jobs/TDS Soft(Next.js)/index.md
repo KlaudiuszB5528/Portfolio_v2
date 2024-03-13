@@ -1,9 +1,9 @@
 ---
-date: '2022-09-01'
+date: '2022-02-01'
 title: 'Next Developer'
 company: 'TDS Soft'
 location: 'Remote'
-range: 'September 2022 - Present'
+range: 'February 2022 - Present'
 url: 'https://www.linkedin.com/in/alan-urban-269b23bb/'
 ---
 
