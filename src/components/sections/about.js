@@ -130,9 +130,9 @@ const About = () => {
     'Next.js',
     'TypeScript',
     'React',
-    'Golang',
+    'Python',
     'PostgreSQL',
-    'GraphQL',
+    'Django',
     'Docker',
     'Prisma',
     'SCSS/TailwindCSS',
@@ -148,14 +148,19 @@ const About = () => {
           <div>
             <p>
               Hello! I'm Klaudiusz, a frontend developer with over two years of commercial
-              experience. I currently work independently on two exciting projects – one in React and
-              the other in Next.js. My responsibilities include building new features, writing
-              tests, refactoring, and conducting code reviews. I thrive on crafting clean logic,
-              implementing new functionalities, and solving development challenges. In my free time,
-              I enjoy building full-stack applications. My preferred stack for these personal
-              projects is Next.js with Go, using Docker and PostgreSQL. Previously, I served as a
-              Web Publisher at <a href="https://cheil.de/">Cheil Germany GmbH</a>, managing the{' '}
-              <a href="https://iqos.com">iqos</a> page for the UK market.
+              experience, currently also working as an AI & Data Science Specialist at{' '}
+              <a href="https://www.ibm.com/us-en">IBM</a>.I am engaged in two independent projects
+              utilizing React and Next.js, where my responsibilities include feature development,
+              test writing, refactoring, and code reviews. In my role at IBM, I leverage my
+              expertise in machine learning and data analysis to tackle various challenges and
+              implement innovative solutions. I take pride in writing clean, efficient code and
+              developing new functionalities. In my free time, I enjoy building full-stack
+              applications using my preferred stack: Next.js with Django, Docker, and PostgreSQL.
+              Previously, I was a Web Publisher at{' '}
+              <a href="https://cheil.de/">Cheil Germany GmbH</a>, managing the{' '}
+              <a href="https://iqos.com">iqos</a> page for the UK,DE markets. I am passionate about
+              continuously expanding my skills in both frontend development and data science, always
+              eager to take on new challenges and projects.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
