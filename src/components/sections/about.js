@@ -127,16 +127,14 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Next.js',
-    'TypeScript',
-    'React',
+    'Angular',
+    'Express.js',
     'Python',
     'PostgreSQL',
-    'Django',
     'Docker',
     'Prisma',
     'SCSS/TailwindCSS',
-    'React-testing-library',
+    'Testing Library',
   ];
 
   return (
@@ -149,14 +147,7 @@ const About = () => {
             <p>
               Hello! I'm Klaudiusz, a frontend developer with over two years of commercial
               experience, currently also working as an AI & Data Science Specialist at{' '}
-              <a href="https://www.ibm.com/us-en">IBM</a>.I am engaged in two independent projects
-              utilizing React and Next.js, where my responsibilities include feature development,
-              test writing, refactoring, and code reviews. In my role at IBM, I leverage my
-              expertise in machine learning and data analysis to tackle various challenges and
-              implement innovative solutions. I take pride in writing clean, efficient code and
-              developing new functionalities. In my free time, I enjoy building full-stack
-              applications using my preferred stack: Next.js with Django, Docker, and PostgreSQL.
-              Previously, I was a Web Publisher at{' '}
+              <a href="https://www.ibm.com/us-en">IBM</a>.Previously, I was a Web Publisher at{' '}
               <a href="https://cheil.de/">Cheil Germany GmbH</a>, managing the{' '}
               <a href="https://iqos.com">iqos</a> page for the UK,DE markets. I am passionate about
               continuously expanding my skills in both frontend development and data science, always
