@@ -66,13 +66,11 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm a React/Next developer at{' '}
-        <a href="https://www.linkedin.com/in/alan-urban-269b23bb/" target="_blank" rel="noreferrer">
-          TDS Soft
-        </a>{' '}
-        and a CS student at Kielce University of Technology. Passionate about creating dynamic,
-        user-centric web apps with the latest tech. Committed to innovative solutions for modern
-        businesses.
+        I'm a frontend developer with over two years of commercial experience, currently also
+        working as an AI & Data Science Specialist at{' '}
+        <a href="https://www.ibm.com" target="_blank" rel="noreferrer">
+          IBM
+        </a>
       </p>
     </>
   );
