@@ -66,7 +66,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm a frontend developer with over two years of commercial experience, currently also
+        I'm a frontend developer with almost 3 years of commercial experience, currently also
         working as an AI & Data Science Specialist at{' '}
         <a href="https://www.ibm.com" target="_blank" rel="noreferrer">
           IBM

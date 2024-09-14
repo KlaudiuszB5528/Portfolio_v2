@@ -129,7 +129,7 @@ const About = () => {
   const skills = [
     'Angular',
     'Express.js',
-    'Python',
+    'MongoDB',
     'PostgreSQL',
     'Docker',
     'Prisma',
@@ -145,12 +145,10 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Klaudiusz, a frontend developer with over two years of commercial
+              Hello! I'm Klaudiusz, a frontend developer with almost 3 years of commercial
               experience, currently also working as an AI & Data Science Specialist at{' '}
-              <a href="https://www.ibm.com/us-en">IBM</a>.Previously, I was a Web Publisher at{' '}
-              <a href="https://cheil.de/">Cheil Germany GmbH</a>, managing the{' '}
-              <a href="https://iqos.com">iqos</a> page for the UK,DE markets. I am passionate about
-              continuously expanding my skills in both frontend development and data science, always
+              <a href="https://www.ibm.com/us-en">IBM</a>. I am passionate about continuously
+              expanding my skills in both frontend/fullstack development and data science, always
               eager to take on new challenges and projects.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>

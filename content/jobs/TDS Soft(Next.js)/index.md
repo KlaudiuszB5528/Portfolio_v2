@@ -7,10 +7,8 @@ range: 'February 2022 - Present'
 url: 'https://www.linkedin.com/in/alan-urban-269b23bb/'
 ---
 
-- Developing and maintaining frontend applications using the MEAN stack (~0.6 year).
-- Around 2,5 years of experience in projects using React/Next.
-- Writing tests in react-testing-library.
-- Working with Next.js since version 11.
-- Tailwind CSS/SCSS/Styled Components.
-- Working with both Rest APIs & GraphQL
-- Creating components Storybook documentation
+- Building scalable and performant web applications using Angular for the frontend andNode.js for the backend.
+- Implemented robust authentication systems leveraging JWT and Redis for secure accessand refresh token management.
+- Worked with both MongoDB (using Mongoose) and PostgreSQL (using Prisma) forefficient data storage and retrieval.
+- Designed and developed RESTful APIs using Express.js for seamless communicationbetween frontend and backend
+- Validated key features with unit tests.
