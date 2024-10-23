@@ -127,14 +127,16 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Angular',
-    'Express.js',
-    'MongoDB',
+    'React / Next.js',
+    'TypeScript',
+    'Node.js',
+    'Fastify',
+    'Drizzle',
     'PostgreSQL',
     'Docker',
-    'Prisma',
     'SCSS/TailwindCSS',
     'Testing Library',
+    'NeonDB',
   ];
 
   return (
@@ -145,11 +147,10 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Klaudiusz, a frontend developer with almost 3 years of commercial
+              Hello! I'm Klaudiusz, a fullstack developer with almost 3 years of commercial
               experience, currently also working as an AI & Data Science Specialist at{' '}
               <a href="https://www.ibm.com/us-en">IBM</a>. I am passionate about continuously
-              expanding my skills in both frontend/fullstack development and data science, always
-              eager to take on new challenges and projects.
+              expanding my skills in fullstack development, always eager to take on new challenges.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>

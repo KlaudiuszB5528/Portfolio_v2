@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { CSSTransition } from 'react-transition-group';
-import styled from 'styled-components';
 import { srConfig } from '@config';
+import { usePrefersReducedMotion } from '@hooks';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
-import { usePrefersReducedMotion } from '@hooks';
+import { graphql, useStaticQuery } from 'gatsby';
+import React, { useEffect, useRef, useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
+import styled from 'styled-components';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -297,6 +297,42 @@ const Jobs = () => {
                     <p className="range">{range}</p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
+
+                    {title === 'Fullstack Developer' && (
+                      <>
+                        <h3 style={{ marginTop: '2rem' }}>
+                          <span>Frontend Developer</span>
+                          <span className="company">
+                            &nbsp;@&nbsp;
+                            <a href={url} className="inline-link">
+                              {company}
+                            </a>
+                          </span>
+                        </h3>
+                        <p className="range">February 2022 - May 2023</p>
+
+                        <div>
+                          <ul>
+                            <li>
+                              Rendered GraphQL data in well-structured tables, ensuring clarity and
+                              user-friendliness.
+                            </li>
+                            <li>Implemented pagination to efficiently handle large datasets.</li>
+
+                            <li>
+                              Created a service worker to enhance performance and offline
+                              functionality.
+                            </li>
+
+                            <li>Optimized queries and mutations.</li>
+
+                            <li>
+                              Validated key features with unit tests using React-testing-library.
+                            </li>
+                          </ul>
+                        </div>
+                      </>
+                    )}
                   </StyledTabPanel>
                 </CSSTransition>
               );

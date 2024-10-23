@@ -1,5 +1,5 @@
 ---
-date: '2024-07-01'
+date: '2021-07-01'
 title: 'AI and Data Science Specialist'
 company: 'IBM'
 location: 'Remote'
